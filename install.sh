@@ -25,3 +25,9 @@ cd ../../nextjs-file-routing/my-app
 rm -rf node_modules && rm -rf package-lock.json
 npm cache clean --force # For benchmarking cold npm install
 time npm install
+
+echo "[bench] Install jekyll"
+cd jekyll/my-jekyll-site
+rm -rf Gemfile && rm -rf Gemfile.lock
+rm -rf ~/.gem/cache/*
+time gem install jekyll
