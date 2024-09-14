@@ -1,0 +1,58 @@
+$backgroundColor: #fff;
+$bodyColor: #000;
+$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+body {
+  font-family: $bodyFont;
+  background-color: $backgroundColor;
+  color: $bodyColor;
+  line-height: 1.5;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.chevron {
+  color: #999;
+  margin-right: 10px;
+}
+
+.directory::after {
+  content: "/";
+  color: #999;
+  padding-left: 2px;
+}
+
+.size {
+  color: #999;
+  padding-left: 15px;
+}

@@ -1,0 +1,38 @@
+title: Title
+email: site@example.com
+description: >-
+  Description of the site.
+
+# The base hostname & protocol for the site
+url: ""
+
+# The subpath of the site
+baseurl: ""
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+  - scope:
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude from processing.
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
